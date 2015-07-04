@@ -1,6 +1,6 @@
 # node-ms-wmic
 
-node-ms-wmic is a Node.js wrapper for Microsoft Windows' [WMIC](https://msdn.microsoft.com/en-us/library/aa394531(v=vs.85).aspx).
+A Node.js wrapper for Microsoft Windows' [WMIC](https://msdn.microsoft.com/en-us/library/aa394531(v=vs.85).aspx)
 
 ## Installation
 ```
@@ -36,8 +36,8 @@ Retrieve specific process properties given one or more optional search condition
 
 * object `opt` - An options object
 	* object{string | number} | object{object{string | number}} `where` - (Optional) An object in which a key is 
-	1. `operator`, with a value of "AND" or "OR" (case-insensitive). Will determine how search conditions are joined.
-	2. A process property, with a value of either a process property value to match with an equal to comparison or an object containing `operator` and `value` keys. `operator` is a [WQL operator](https://msdn.microsoft.com/en-us/library/aa394605(v=vs.85).aspx) or [LIKE Operator](https://msdn.microsoft.com/en-us/library/aa392263(v=vs.85).aspx). `value` is a process property value.
+		1. `operator`, with a value of "AND" or "OR" (case-insensitive). Will determine how search conditions are joined.
+		2. A process property, with a value of either a process property value to match with an equal to comparison or an object containing `operator` and `value` keys. `operator` is a [WQL operator](https://msdn.microsoft.com/en-us/library/aa394605(v=vs.85).aspx) or [LIKE Operator](https://msdn.microsoft.com/en-us/library/aa392263(v=vs.85).aspx). `value` is a process property value.
 	* array{string} `get` - Process properties to get
 * function(null | object `err`, array{object{string}} `processes`) `cb` - A callback to executed after the process properties are retrieved.
 
@@ -150,8 +150,8 @@ Execute a method on process(es) given one or more search conditions
 
 * object `opt` - An options object
 	* object{string | number} | object{object{string | number}} `where` - An object in which a key is 
-	1. `operator`, with a value of "AND" or "OR" (case-insensitive). Will determine how search conditions are joined.
-	2. A process property, with a value of either a process property value to match with an equal to comparison or an object containing `operator` and `value` keys. `operator` is a [WQL operator](https://msdn.microsoft.com/en-us/library/aa394605(v=vs.85).aspx) or [LIKE Operator](https://msdn.microsoft.com/en-us/library/aa392263(v=vs.85).aspx). `value` is a process property value.
+		1. `operator`, with a value of "AND" or "OR" (case-insensitive). Will determine how search conditions are joined.
+		2. A process property, with a value of either a process property value to match with an equal to comparison or an object containing `operator` and `value` keys. `operator` is a [WQL operator](https://msdn.microsoft.com/en-us/library/aa394605(v=vs.85).aspx) or [LIKE Operator](https://msdn.microsoft.com/en-us/library/aa392263(v=vs.85).aspx). `value` is a process property value.
 	* string `call` - The method to execute
 * function(null | object `err`, array{object{string}} `stdOut`) `cb` - A callback to be executed after the method is called.
 
@@ -195,8 +195,8 @@ Terminate process(es) given one or more search conditions
 
 * object `opt` - An options object
 	* object{string | number} | object{object{string | number}} `where` - An object in which a key is 
-	1. `operator`, with a value of "AND" or "OR" (case-insensitive). Will determine how search conditions are joined.
-	2. A process property, with a value of either a process property value to match with an equal to comparison or an object containing `operator` and `value` keys. `operator` is a [WQL operator](https://msdn.microsoft.com/en-us/library/aa394605(v=vs.85).aspx) or [LIKE Operator](https://msdn.microsoft.com/en-us/library/aa392263(v=vs.85).aspx). `value` is a process property value.
+		1. `operator`, with a value of "AND" or "OR" (case-insensitive). Will determine how search conditions are joined.
+		2. A process property, with a value of either a process property value to match with an equal to comparison or an object containing `operator` and `value` keys. `operator` is a [WQL operator](https://msdn.microsoft.com/en-us/library/aa394605(v=vs.85).aspx) or [LIKE Operator](https://msdn.microsoft.com/en-us/library/aa392263(v=vs.85).aspx). `value` is a process property value.
 * function(null | object `err`, array{object{string}} `stdOut`) `cb` - A callback to be executed after the process(es) are terminated.
 
 __Examples__
