@@ -34,7 +34,13 @@
     "csv": "~0.4.0",
     "lodash": "~3.9.3"
   },
+  "devDependencies": {
+    "release-script": "0.2.5"
+  },
   "bugs": {
     "url": "https://github.com/mjhasbach/node-ms-wmic/issues"
+  },
+  "scripts": {
+    "release": "release"
   }
 }
