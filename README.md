@@ -21,7 +21,7 @@ Execute WMIC with the provided `args`
 __Example__
 
 ```
-wmic.query('process where name="notepad.exe" get executablepath', function (err, stdOut) {
+wmic.execute('process where name="notepad.exe" get executablepath', function (err, stdOut) {
     if (err) {
         console.error(err);
     }
